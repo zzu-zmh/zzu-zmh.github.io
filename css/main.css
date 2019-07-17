@@ -1895,7 +1895,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #59fffb;
+  background: #ff2aff;
 }
 .feed-link,
 .chat {
@@ -2545,7 +2545,7 @@ ul.breadcrumb li+li:last-child {
   float: right;
   box-sizing: border-box;
   padding: 40px;
-  width: calc(100% - 252px);
+  width: calc(100% - 264px);
   background: #fff;
   min-height: 700px;
   box-shadow: initial;
@@ -2784,7 +2784,7 @@ ul.breadcrumb li+li:last-child {
 }
 .sidebar-inner.affix {
   position: fixed;
-  top: 12px;
+  top: 24px;
 }
 .sidebar-inner.affix-bottom {
   position: absolute;
@@ -2906,4 +2906,7 @@ ul.breadcrumb li+li:last-child {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.site-meta {
+  background: #1e90ff;
 }

@@ -119,12 +119,12 @@
 <meta property="og:site_name" content="以梦为马">
 <meta property="og:description" content="Eureka服务体系服务治理是微服务架构中最核心和基础的模块，它主要被用来实现微服务的注册与发现的。 Eureka主要包括两个组件：Eureka Server和Eureka Client。 Eureka Server就是服务的注册中心，它同其他注册中心一样，支持高可用的配置。它支持集群模式部署，当集群中有分片发生故障的时候，Eureka会自动转入自我保护模式，它允许在分片发生故障的时候继续提供服务">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://zzu-zmh.github.io/2019/08/24/Spring-Cloud-Eureka详解/E:%5Cblog%5Csource_posts%5CSpring-Cloud-Eureka%E8%AF%A6%E8%A7%A3%5C20170727222209291.png">
-<meta property="og:updated_time" content="2019-08-24T09:46:31.215Z">
+<meta property="og:image" content="https://zzu-zmh.github.io/2019/08/24/Spring-Cloud-Eureka详解/20170727222209291.png">
+<meta property="og:updated_time" content="2019-08-24T09:51:48.930Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring Cloud Eureka详解">
 <meta name="twitter:description" content="Eureka服务体系服务治理是微服务架构中最核心和基础的模块，它主要被用来实现微服务的注册与发现的。 Eureka主要包括两个组件：Eureka Server和Eureka Client。 Eureka Server就是服务的注册中心，它同其他注册中心一样，支持高可用的配置。它支持集群模式部署，当集群中有分片发生故障的时候，Eureka会自动转入自我保护模式，它允许在分片发生故障的时候继续提供服务">
-<meta name="twitter:image" content="https://zzu-zmh.github.io/2019/08/24/Spring-Cloud-Eureka详解/E:%5Cblog%5Csource_posts%5CSpring-Cloud-Eureka%E8%AF%A6%E8%A7%A3%5C20170727222209291.png">
+<meta name="twitter:image" content="https://zzu-zmh.github.io/2019/08/24/Spring-Cloud-Eureka详解/20170727222209291.png">
 
 
 
@@ -420,7 +420,7 @@
                 
               
 
-              <time title="创建时间：2019-08-24 15:21:20 / 修改时间：17:46:31" itemprop="dateCreated datePublished" datetime="2019-08-24T15:21:20+08:00">2019-08-24</time>
+              <time title="创建时间：2019-08-24 15:21:20 / 修改时间：17:51:48" itemprop="dateCreated datePublished" datetime="2019-08-24T15:21:20+08:00">2019-08-24</time>
             </span>
           
 
@@ -561,7 +561,7 @@
 </ol>
 <h2 id="服务调用"><a href="#服务调用" class="headerlink" title="服务调用"></a>服务调用</h2><p>服务消费者在获取服务清单后，通过服务名可以获取具体提供服务的实例名和该实例的元数据信息。因为有这些服务实例的详细信息，所以客户端可以根据自己的需要决定具体调用哪个实例，在Ribbon中会默认采用轮询的方式进行调用，从而实现客户端的负载均衡。</p>
 <h2 id="服务下线"><a href="#服务下线" class="headerlink" title="服务下线"></a>服务下线</h2><p>在系统运行过程中必然会面临关闭或重启服务的某个实例的情况，在服务关闭操作时，会触发一个服务下线的Rest服务请求给Eureka Server，告诉服务注册中心：“我要下线了。”服务端在接收到该请求后，将该服务状态置位下线（DOWN），并把该下线事件传播出去。</p>
-<h1 id="配置详解"><a href="#配置详解" class="headerlink" title="配置详解"></a>配置详解</h1><p><img src="/2019/08/24/Spring-Cloud-Eureka详解/E:%5Cblog%5Csource_posts%5CSpring-Cloud-Eureka%E8%AF%A6%E8%A7%A3%5C20170727222209291.png" alt="配置详解"></p>
+<h1 id="配置详解"><a href="#配置详解" class="headerlink" title="配置详解"></a>配置详解</h1><p><img src="/2019/08/24/Spring-Cloud-Eureka详解/20170727222209291.png" alt="配置详解"></p>
 <h1 id="服务实例类配置"><a href="#服务实例类配置" class="headerlink" title="服务实例类配置"></a>服务实例类配置</h1><h2 id="端点配置"><a href="#端点配置" class="headerlink" title="端点配置"></a>端点配置</h2><p>eureka实例的状态页面和健康监控的url默认为spring boot actuator提供的/info端点和/health端点。我们必须确保Eureka客户端的/health端点在发送元数据的时候，是一个能够被注册中心访问到的地址，否则服务注册中心不会根据应用的健康检查来更改状态（仅当开启了healthcheck功能时，以该端点信息作为健康检查标准）。而如果/info端点不正确的话，会导致在Eureka面板中单击服务时，无法访问到服务实例提供的信息接口。</p>
 <p>大多数情况下，我们不需要修改这个几个url配置。但是当应用不使用默认的上下文(context path或servlet path，比如配置server.servletPath=/test），或者管理终端路径（比如配置management.contextPath=/admin）时，我们需要修改健康检查和状态页的url地址信息</p>
 <p>application.propertiesl配置文件如下：</p>
@@ -599,7 +599,7 @@
   <p><span>本文标题:</span><a href="/2019/08/24/Spring-Cloud-Eureka详解/">Spring Cloud Eureka详解</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Mr.Zhu 的个人博客">Mr.Zhu</a></p>
   <p><span>发布时间:</span>2019年08月24日 - 15:21</p>
-  <p><span>最后更新:</span>2019年08月24日 - 17:46</p>
+  <p><span>最后更新:</span>2019年08月24日 - 17:51</p>
   <p><span>原始链接:</span><a href="/2019/08/24/Spring-Cloud-Eureka详解/" title="Spring Cloud Eureka详解">https://zzu-zmh.github.io/2019/08/24/Spring-Cloud-Eureka详解/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://zzu-zmh.github.io/2019/08/24/Spring-Cloud-Eureka详解/" aria-label="复制成功！"></i></span>
   </p>

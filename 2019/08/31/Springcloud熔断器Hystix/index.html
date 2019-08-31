@@ -111,17 +111,20 @@
   </script>
 
 
-  <meta name="description" content="没有梦想，跟咸鱼有什么区别">
-<meta name="keywords" content="java 大数据">
-<meta property="og:type" content="website">
-<meta property="og:title" content="以梦为马">
-<meta property="og:url" content="https://zzu-zmh.github.io/tags/nginx/index.html">
+  <meta name="description" content="熔断器雪崩效应在微服务架构中，通常存在多个服务调用，基础微服务不可用将会导致级联故障，从而导致整个系统不可用。雪崩效应就是因为服务提供者不可用，才会导致服务消费者不可用，并将这个过程逐渐放大。 熔断器熔断器的原理如下：它可以实现快速失败，如果它在一段时间内侦测到许多类似的错误，会强迫其以后的多个调用快速失败，不在访问远程服务器，从而防止应用程序不断地尝试执行可能会失败的操作，使得应用程序继续执行而">
+<meta name="keywords" content="Springcloud">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Springcloud熔断器Hystix">
+<meta property="og:url" content="https://zzu-zmh.github.io/2019/08/31/Springcloud熔断器Hystix/index.html">
 <meta property="og:site_name" content="以梦为马">
-<meta property="og:description" content="没有梦想，跟咸鱼有什么区别">
+<meta property="og:description" content="熔断器雪崩效应在微服务架构中，通常存在多个服务调用，基础微服务不可用将会导致级联故障，从而导致整个系统不可用。雪崩效应就是因为服务提供者不可用，才会导致服务消费者不可用，并将这个过程逐渐放大。 熔断器熔断器的原理如下：它可以实现快速失败，如果它在一段时间内侦测到许多类似的错误，会强迫其以后的多个调用快速失败，不在访问远程服务器，从而防止应用程序不断地尝试执行可能会失败的操作，使得应用程序继续执行而">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://zzu-zmh.github.io/2019/08/31/Springcloud熔断器Hystix/2019-08-31_155915.png">
+<meta property="og:updated_time" content="2019-08-31T08:24:21.864Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="以梦为马">
-<meta name="twitter:description" content="没有梦想，跟咸鱼有什么区别">
+<meta name="twitter:title" content="Springcloud熔断器Hystix">
+<meta name="twitter:description" content="熔断器雪崩效应在微服务架构中，通常存在多个服务调用，基础微服务不可用将会导致级联故障，从而导致整个系统不可用。雪崩效应就是因为服务提供者不可用，才会导致服务消费者不可用，并将这个过程逐渐放大。 熔断器熔断器的原理如下：它可以实现快速失败，如果它在一段时间内侦测到许多类似的错误，会强迫其以后的多个调用快速失败，不在访问远程服务器，从而防止应用程序不断地尝试执行可能会失败的操作，使得应用程序继续执行而">
+<meta name="twitter:image" content="https://zzu-zmh.github.io/2019/08/31/Springcloud熔断器Hystix/2019-08-31_155915.png">
 
 
 
@@ -129,7 +132,7 @@
 
   
   
-  <link rel="canonical" href="https://zzu-zmh.github.io/tags/nginx/">
+  <link rel="canonical" href="https://zzu-zmh.github.io/2019/08/31/Springcloud熔断器Hystix/">
 
 
 
@@ -139,7 +142,7 @@
   };
 </script>
 
-  <title>标签: nginx | 以梦为马</title>
+  <title>Springcloud熔断器Hystix | 以梦为马</title>
   
 
 
@@ -187,7 +190,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -245,7 +248,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -354,80 +357,313 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>nginx<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zzu-zmh.github.io/2019/08/31/Springcloud熔断器Hystix/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.Zhu">
+      <meta itemprop="description" content="没有梦想，跟咸鱼有什么区别">
+      <meta itemprop="image" content="/images/mingren.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="以梦为马">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2019/08/18/正向代理与反向代理的区别/" itemprop="url">
-            
-              <span itemprop="name">正向代理与反向代理的区别</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Springcloud熔断器Hystix
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-18T13:05:53+08:00" content="2019-08-18">
-          08-18
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-31 15:39:54 / 修改时间：16:24:21" itemprop="dateCreated datePublished" datetime="2019-08-31T15:39:54+08:00">2019-08-31</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SpringCloud/" itemprop="url" rel="index"><span itemprop="name">SpringCloud</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+                 阅读次数： 
+                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+              </span>
+            </span>
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="熔断器"><a href="#熔断器" class="headerlink" title="熔断器"></a>熔断器</h1><h2 id="雪崩效应"><a href="#雪崩效应" class="headerlink" title="雪崩效应"></a>雪崩效应</h2><p>在微服务架构中，通常存在多个服务调用，基础微服务不可用将会导致级联故障，从而导致整个系统不可用。雪崩效应就是因为服务提供者不可用，才会导致服务消费者不可用，并将这个过程逐渐放大。</p>
+<h2 id="熔断器-1"><a href="#熔断器-1" class="headerlink" title="熔断器"></a>熔断器</h2><p>熔断器的原理如下：它可以实现快速失败，如果它在一段时间内侦测到许多类似的错误，会强迫其以后的多个调用快速失败，不在访问远程服务器，从而防止应用程序不断地尝试执行可能会失败的操作，使得应用程序继续执行而不用等待修复错误，因为如果存在单个服务不可用，调用这个服务就会出现线程阻塞，此时如果有大量的请求涌入，Servlet容器的线程资源将会被消耗完毕，导致服务瘫痪。</p>
+<p>熔断器会记录最近调用发生错误的次数，如果次数达到了指定的阈值，他会决定是否允许执行操作，或者立即返回错误。</p>
+<h2 id="Hystrix特性"><a href="#Hystrix特性" class="headerlink" title="Hystrix特性"></a>Hystrix特性</h2><p><img src="/2019/08/31/Springcloud熔断器Hystix/2019-08-31_155915.png" alt></p>
+<p>断路器很好理解, 当Hystrix Command请求后端服务失败数量超过一定比例(默认50%), 断路器会切换到开路状态(Open). 这时所有请求会直接失败而不会发送到后端服务. 断路器保持在开路状态一段时间后(默认5秒), 自动切换到半开路状态(HALF-OPEN). 这时会判断下一次请求的返回情况, 如果请求成功, 断路器切回闭路状态(CLOSED), 否则重新切换到开路状态(OPEN). Hystrix的断路器就像我们家庭电路中的保险丝, 一旦后端服务不可用, 断路器会直接切断请求链, 避免发送大量无效请求影响系统吞吐量, 并且断路器有自我检测并恢复的能力.</p>
+<h2 id="Fallback"><a href="#Fallback" class="headerlink" title="Fallback"></a>Fallback</h2><p>Fallback相当于是降级操作. 对于查询操作, 我们可以实现一个fallback方法, 当请求后端服务出现异常的时候, 可以使用fallback方法返回的值. fallback方法的返回值一般是设置的默认值或者来自缓存</p>
+<h2 id="资源隔离"><a href="#资源隔离" class="headerlink" title="资源隔离"></a>资源隔离</h2><p>在Hystrix中, 主要通过线程池来实现资源隔离. 通常在使用的时候我们会根据调用的远程服务划分出多个线程池. 例如调用产品服务的Command放入A线程池, 调用账户服务的Command放入B线程池. 这样做的主要优点是运行环境被隔离开了. 这样就算调用服务的代码存在bug或者由于其他原因导致自己所在线程池被耗尽时, 不会对系统的其他服务造成影响. 但是带来的代价就是维护多个线程池会对系统带来额外的性能开销. 如果是对性能有严格要求而且确信自己调用服务的客户端代码不会出问题的话, 可以使用Hystrix的信号模式(Semaphores)来隔离资源.</p>
+<h1 id="Feign-Hystrix"><a href="#Feign-Hystrix" class="headerlink" title="Feign Hystrix"></a>Feign Hystrix</h1><p>熔断的作用只是在服务调用这一端，只需要改动服务调用的配置和代码即可</p>
+<p>因为Feign中已经依赖了Hystrix所以在maven配置上不用做任何改动.</p>
+<p>1、配置文件application.peoperties</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">feign.hystrix.enabled=true</span><br></pre></td></tr></table></figure>
+
+<p>2、创建错误回调类，实现Feign自定义的接口</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloRemoteHystrix</span> <span class="keyword">implements</span> <span class="title">HelloRemote</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">(@RequestParam(value=<span class="string">"name"</span>)</span> String name)</span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="string">"hello :"</span>+name+<span class="string">",this message send failed"</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3、在Feign自定义接口添加fallback属性</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@FeignClient</span>(name=<span class="string">"spring-cloud-producer"</span>,fallback=HelloRemoteHystrix.class)&#123;</span><br><span class="line">	 <span class="meta">@RequestMapping</span>(value = <span class="string">"/hello"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">(@RequestParam(value = <span class="string">"name"</span>)</span> String name)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>只需要Feign客户端添加fallback属性，指定回调类，就可实现熔断器的功能</p>
+<p>一次启动服务中心，提供服务，服务消费三个项目，输入<a href="http://localhost:9001/hello/eureka" target="_blank" rel="noopener">http://localhost:9001/hello/eureka</a></p>
+<p>返回： hello  ：eureka</p>
+<p>停止服务提供的项目，输入<a href="http://localhost:9001/hello/eureka" target="_blank" rel="noopener">http://localhost:9001/hello/eureka</a></p>
+<p>返回： hello ： eureka ,this message send failed</p>
+<p>说明熔断成功。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+	
+	<div>
+      
+        ﻿
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2019/08/31/Springcloud熔断器Hystix/">Springcloud熔断器Hystix</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Mr.Zhu 的个人博客">Mr.Zhu</a></p>
+  <p><span>发布时间:</span>2019年08月31日 - 15:39</p>
+  <p><span>最后更新:</span>2019年08月31日 - 16:24</p>
+  <p><span>原始链接:</span><a href="/2019/08/31/Springcloud熔断器Hystix/" title="Springcloud熔断器Hystix">https://zzu-zmh.github.io/2019/08/31/Springcloud熔断器Hystix/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://zzu-zmh.github.io/2019/08/31/Springcloud熔断器Hystix/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+      $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+        });
+    });  
+</script>
 
 
       
     </div>
 
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>求大佬打赏</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="Mr.Zhu 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.png" alt="Mr.Zhu 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+	<div>
+		
+			﻿<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+		
+	</div>
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/Springcloud/" rel="tag"># Springcloud</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/31/SpringCloud之Eureka注册与发现/" rel="next" title="SpringCloud之Eureka注册与发现">
+                <i class="fa fa-chevron-left"></i> SpringCloud之Eureka注册与发现
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NTQ5MS8yMjAwMw=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -447,8 +683,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -587,6 +832,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#熔断器"><span class="nav-number">1.</span> <span class="nav-text">熔断器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#雪崩效应"><span class="nav-number">1.1.</span> <span class="nav-text">雪崩效应</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#熔断器-1"><span class="nav-number">1.2.</span> <span class="nav-text">熔断器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hystrix特性"><span class="nav-number">1.3.</span> <span class="nav-text">Hystrix特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fallback"><span class="nav-number">1.4.</span> <span class="nav-text">Fallback</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#资源隔离"><span class="nav-number">1.5.</span> <span class="nav-text">资源隔离</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Feign-Hystrix"><span class="nav-number">2.</span> <span class="nav-text">Feign Hystrix</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -774,6 +1036,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
 
   
 
@@ -789,6 +1055,26 @@
 
   
 
+
+  
+    
+
+
+<script>
+  window.livereOptions = {
+    refer: '2019/08/31/Springcloud熔断器Hystix/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+  
 
 
   

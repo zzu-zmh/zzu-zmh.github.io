@@ -111,21 +111,21 @@
   </script>
 
 
-  <meta name="description" content="title: docker技术详解date: 2019-11-09 17:56:52tags: dockercategories: 虚拟容器copyright: true Docker 和 VM的区别传统的虚拟机VM需要模拟整台机器包括硬件资源，每台虚拟机都会拥有自己的操作系统。虚拟机一旦开启，就会占用预分配的资源，包括必要的二进制和库，以及第一个完整的操作系统。 容器技术与虚拟机不同的是：容器技">
+  <meta name="description" content="title:  docker技术详解date:  2019-11-09 17:56:52tags:  dockercategories:  虚拟容器copyright:  true Docker 和 VM的区别传统的虚拟机VM需要模拟整台机器包括硬件资源，每台虚拟机都会拥有自己的操作系统。虚拟机一旦开启，就会占用预分配的资源，包括必要的二进制和库，以及第一个完整的操作系统。 容器技术与虚拟机不同的">
 <meta name="keywords" content="java 大数据">
 <meta property="og:type" content="article">
 <meta property="og:title" content="以梦为马">
 <meta property="og:url" content="https://zzu-zmh.github.io/2019/11/09/docker技术详解/index.html">
 <meta property="og:site_name" content="以梦为马">
-<meta property="og:description" content="title: docker技术详解date: 2019-11-09 17:56:52tags: dockercategories: 虚拟容器copyright: true Docker 和 VM的区别传统的虚拟机VM需要模拟整台机器包括硬件资源，每台虚拟机都会拥有自己的操作系统。虚拟机一旦开启，就会占用预分配的资源，包括必要的二进制和库，以及第一个完整的操作系统。 容器技术与虚拟机不同的是：容器技">
+<meta property="og:description" content="title:  docker技术详解date:  2019-11-09 17:56:52tags:  dockercategories:  虚拟容器copyright:  true Docker 和 VM的区别传统的虚拟机VM需要模拟整台机器包括硬件资源，每台虚拟机都会拥有自己的操作系统。虚拟机一旦开启，就会占用预分配的资源，包括必要的二进制和库，以及第一个完整的操作系统。 容器技术与虚拟机不同的">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zzu-zmh.github.io/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110094611.png">
 <meta property="og:image" content="https://zzu-zmh.github.io/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110100335.png">
 <meta property="og:image" content="https://zzu-zmh.github.io/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110144218.png">
-<meta property="og:updated_time" content="2019-11-10T06:45:22.351Z">
+<meta property="og:updated_time" content="2019-11-10T07:03:57.308Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="以梦为马">
-<meta name="twitter:description" content="title: docker技术详解date: 2019-11-09 17:56:52tags: dockercategories: 虚拟容器copyright: true Docker 和 VM的区别传统的虚拟机VM需要模拟整台机器包括硬件资源，每台虚拟机都会拥有自己的操作系统。虚拟机一旦开启，就会占用预分配的资源，包括必要的二进制和库，以及第一个完整的操作系统。 容器技术与虚拟机不同的是：容器技">
+<meta name="twitter:description" content="title:  docker技术详解date:  2019-11-09 17:56:52tags:  dockercategories:  虚拟容器copyright:  true Docker 和 VM的区别传统的虚拟机VM需要模拟整台机器包括硬件资源，每台虚拟机都会拥有自己的操作系统。虚拟机一旦开启，就会占用预分配的资源，包括必要的二进制和库，以及第一个完整的操作系统。 容器技术与虚拟机不同的">
 <meta name="twitter:image" content="https://zzu-zmh.github.io/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110094611.png">
 
 
@@ -437,7 +437,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-11-10 14:45:22" itemprop="dateModified" datetime="2019-11-10T14:45:22+08:00">2019-11-10</time>
+                <time title="修改时间：2019-11-10 15:03:57" itemprop="dateModified" datetime="2019-11-10T15:03:57+08:00">2019-11-10</time>
               </span>
             
           
@@ -482,7 +482,7 @@
       
 
       
-        <p>title: docker技术详解<br>date: 2019-11-09 17:56:52<br>tags: docker<br>categories: 虚拟容器<br>copyright: true</p>
+        <p>title:  docker技术详解<br>date:  2019-11-09 17:56:52<br>tags:  docker<br>categories:  虚拟容器<br>copyright:  true</p>
 <h1 id="Docker-和-VM的区别"><a href="#Docker-和-VM的区别" class="headerlink" title="Docker 和 VM的区别"></a>Docker 和 VM的区别</h1><p>传统的虚拟机VM需要模拟整台机器包括硬件资源，每台虚拟机都会拥有自己的操作系统。虚拟机一旦开启，就会占用预分配的资源，包括必要的二进制和库，以及第一个完整的操作系统。</p>
 <p>容器技术与虚拟机不同的是：容器技术可以和宿主机共享硬件资源以及操作系统。容器可以包含自己的应用和相应的依赖包，但与宿主机公用内核。</p>
 <p><img src="/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110094611.png" alt></p>

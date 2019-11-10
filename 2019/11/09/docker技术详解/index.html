@@ -111,18 +111,22 @@
   </script>
 
 
-  <meta name="description" content="JDK 动态代理与CGLIB动态代理​    动态代理是java中常用的设计模式。代理中有两个概念：目标类与代理类。代理类也就是我们所说的中介，对外提供服务时，通过调用代理类就能得到调用目标类的效果，当然，我们会在代理类中添加一些相关的处理。实际上，代理类并不是真正的对外服务的对象，而是通过调用目标类来完成服务的调用的。java中常用的代理方式有两种：JDK动态代理，CGLIB动态代理。 JDK">
-<meta name="keywords" content="动态代理">
+  <meta name="description" content="title: docker技术详解date: 2019-11-09 17:56:52tags: dockercategories: 虚拟容器copyright: true Docker 和 VM的区别传统的虚拟机VM需要模拟整台机器包括硬件资源，每台虚拟机都会拥有自己的操作系统。虚拟机一旦开启，就会占用预分配的资源，包括必要的二进制和库，以及第一个完整的操作系统。 容器技术与虚拟机不同的是：容器技">
+<meta name="keywords" content="java 大数据">
 <meta property="og:type" content="article">
-<meta property="og:title" content="动态代理之JDK与CGLIB">
-<meta property="og:url" content="https://zzu-zmh.github.io/2019/08/17/动态代理之JDK与CGLIB/index.html">
+<meta property="og:title" content="以梦为马">
+<meta property="og:url" content="https://zzu-zmh.github.io/2019/11/09/docker技术详解/index.html">
 <meta property="og:site_name" content="以梦为马">
-<meta property="og:description" content="JDK 动态代理与CGLIB动态代理​    动态代理是java中常用的设计模式。代理中有两个概念：目标类与代理类。代理类也就是我们所说的中介，对外提供服务时，通过调用代理类就能得到调用目标类的效果，当然，我们会在代理类中添加一些相关的处理。实际上，代理类并不是真正的对外服务的对象，而是通过调用目标类来完成服务的调用的。java中常用的代理方式有两种：JDK动态代理，CGLIB动态代理。 JDK">
+<meta property="og:description" content="title: docker技术详解date: 2019-11-09 17:56:52tags: dockercategories: 虚拟容器copyright: true Docker 和 VM的区别传统的虚拟机VM需要模拟整台机器包括硬件资源，每台虚拟机都会拥有自己的操作系统。虚拟机一旦开启，就会占用预分配的资源，包括必要的二进制和库，以及第一个完整的操作系统。 容器技术与虚拟机不同的是：容器技">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-17T05:34:57.829Z">
+<meta property="og:image" content="https://zzu-zmh.github.io/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110094611.png">
+<meta property="og:image" content="https://zzu-zmh.github.io/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110100335.png">
+<meta property="og:image" content="https://zzu-zmh.github.io/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110144218.png">
+<meta property="og:updated_time" content="2019-11-10T06:45:22.351Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="动态代理之JDK与CGLIB">
-<meta name="twitter:description" content="JDK 动态代理与CGLIB动态代理​    动态代理是java中常用的设计模式。代理中有两个概念：目标类与代理类。代理类也就是我们所说的中介，对外提供服务时，通过调用代理类就能得到调用目标类的效果，当然，我们会在代理类中添加一些相关的处理。实际上，代理类并不是真正的对外服务的对象，而是通过调用目标类来完成服务的调用的。java中常用的代理方式有两种：JDK动态代理，CGLIB动态代理。 JDK">
+<meta name="twitter:title" content="以梦为马">
+<meta name="twitter:description" content="title: docker技术详解date: 2019-11-09 17:56:52tags: dockercategories: 虚拟容器copyright: true Docker 和 VM的区别传统的虚拟机VM需要模拟整台机器包括硬件资源，每台虚拟机都会拥有自己的操作系统。虚拟机一旦开启，就会占用预分配的资源，包括必要的二进制和库，以及第一个完整的操作系统。 容器技术与虚拟机不同的是：容器技">
+<meta name="twitter:image" content="https://zzu-zmh.github.io/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110094611.png">
 
 
 
@@ -130,7 +134,7 @@
 
   
   
-  <link rel="canonical" href="https://zzu-zmh.github.io/2019/08/17/动态代理之JDK与CGLIB/">
+  <link rel="canonical" href="https://zzu-zmh.github.io/2019/11/09/docker技术详解/">
 
 
 
@@ -140,7 +144,7 @@
   };
 </script>
 
-  <title>动态代理之JDK与CGLIB | 以梦为马</title>
+  <title> | 以梦为马</title>
   
 
 
@@ -375,7 +379,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zzu-zmh.github.io/2019/08/17/动态代理之JDK与CGLIB/">
+    <link itemprop="mainEntityOfPage" href="https://zzu-zmh.github.io/2019/11/09/docker技术详解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Zhu">
@@ -392,7 +396,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">动态代理之JDK与CGLIB
+          <h1 class="post-title" itemprop="name headline">
 
               
             
@@ -418,7 +422,7 @@
                 
               
 
-              <time title="创建时间：2019-08-17 11:42:41 / 修改时间：13:34:57" itemprop="dateCreated datePublished" datetime="2019-08-17T11:42:41+08:00">2019-08-17</time>
+              <time title="创建时间：2019-11-09 17:56:52" itemprop="dateCreated datePublished" datetime="2019-11-09T17:56:52+08:00">2019-11-09</time>
             </span>
           
 
@@ -426,23 +430,18 @@
             
 
             
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-11-10 14:45:22" itemprop="dateModified" datetime="2019-11-10T14:45:22+08:00">2019-11-10</time>
               </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+            
+          
 
-                
-                
-              
-            </span>
           
 
           
@@ -483,43 +482,185 @@
       
 
       
-        <h1 id="JDK-动态代理与CGLIB动态代理"><a href="#JDK-动态代理与CGLIB动态代理" class="headerlink" title="JDK 动态代理与CGLIB动态代理"></a>JDK 动态代理与CGLIB动态代理</h1><p>​    动态代理是java中常用的设计模式。代理中有两个概念：目标类与代理类。代理类也就是我们所说的中介，对外提供服务时，通过调用代理类就能得到调用目标类的效果，当然，我们会在代理类中添加一些相关的处理。实际上，代理类并不是真正的对外服务的对象，而是通过调用目标类来完成服务的调用的。java中常用的代理方式有两种：JDK动态代理，CGLIB动态代理。</p>
-<h1 id="JDK-动态代理"><a href="#JDK-动态代理" class="headerlink" title="JDK 动态代理"></a>JDK 动态代理</h1><p>​    对于JDK动态代理来说，就是通过让目标类与代理类实现同一接口，代理类内部持有目标类对象，通过这种方式来达到代理的作用。必须保证两点：</p>
-<ol>
-<li>目标类必须实现接口。</li>
-<li>如果想要对目标类中的方法进行拦截，必须保证这些方法都在接口中声明。</li>
-</ol>
-<p>​     要实现JDK动态代理，代理类首先必须要实现InvocationHandler接口，可以看一下该接口定义：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">InvocationHandler</span> </span>&#123;     </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object proxy, Method method, Object[]args)</span> <span class="keyword">throws</span> Throwable</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>title: docker技术详解<br>date: 2019-11-09 17:56:52<br>tags: docker<br>categories: 虚拟容器<br>copyright: true</p>
+<h1 id="Docker-和-VM的区别"><a href="#Docker-和-VM的区别" class="headerlink" title="Docker 和 VM的区别"></a>Docker 和 VM的区别</h1><p>传统的虚拟机VM需要模拟整台机器包括硬件资源，每台虚拟机都会拥有自己的操作系统。虚拟机一旦开启，就会占用预分配的资源，包括必要的二进制和库，以及第一个完整的操作系统。</p>
+<p>容器技术与虚拟机不同的是：容器技术可以和宿主机共享硬件资源以及操作系统。容器可以包含自己的应用和相应的依赖包，但与宿主机公用内核。</p>
+<p><img src="/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110094611.png" alt></p>
+<p>通过将应用和相关依赖打包为一个文件系统，运行这个文件，就会生成一个虚拟的容器，该容器以进程的形式在宿主机上存活，并和宿主机之间的进程进行隔离，看上去，就好像该程序在真实的物理机上运行。</p>
+<p>通过docker和虚拟机对比，我们不难发现，docker技术的优势：</p>
+<table>
+<thead>
+<tr>
+<th align="left">特性</th>
+<th align="left">容器</th>
+<th align="left">虚拟机</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">启动</td>
+<td align="left">秒级</td>
+<td align="left">分钟级</td>
+</tr>
+<tr>
+<td align="left">硬盘使用</td>
+<td align="left">一般为MB</td>
+<td align="left">一般为GB</td>
+</tr>
+<tr>
+<td align="left">性能</td>
+<td align="left">接近原生</td>
+<td align="left">弱于</td>
+</tr>
+<tr>
+<td align="left">系统支持量</td>
+<td align="left">单机支持上千个容器</td>
+<td align="left">一般是几十个</td>
+</tr>
+</tbody></table>
+<h1 id="Docker-三个重要概念"><a href="#Docker-三个重要概念" class="headerlink" title="Docker 三个重要概念"></a>Docker 三个重要概念</h1><ul>
+<li>镜像(images)</li>
+<li>仓库(Repository)</li>
+<li>容器(Container)</li>
+</ul>
+<p>简单的来说，就是通过仓库可以管理我们的镜像文件，通过镜像文件就可以生成容器。</p>
+<h2 id="镜像"><a href="#镜像" class="headerlink" title="镜像"></a>镜像</h2><p>docker 镜像可以理解为特殊的文件系统，包括运行时所需要的程序、库资源、配置。镜像不包含$\color{red}{动态数据}$，一旦构建出镜像，镜像的内容就不会变化。</p>
+<p>镜像就是一堆只读层(read-only layer)的统一视角，它们重叠在一起。除了最下面一层，其它层都会有一个指针指向下一层。这些层是<code>Docker</code> 内部的实现细节，并且能够在主机的文件系统上访问到。统一文件系统 <code>(union file system)</code> 技术能够将不同的层整合成一个文件系统，为这些层提供了一个统一的视角，这样就隐藏了多层的存在，在用户的角度看来，只存在一个文件系统。我们可以在图片的右边看到这个视角的形式。</p>
+<p><img src="/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110100335.png" alt></p>
+<h3 id="镜像基本命令"><a href="#镜像基本命令" class="headerlink" title="镜像基本命令"></a>镜像基本命令</h3><ul>
+<li>列出本地主机上的镜像</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
 
-<p>​     该接口中的invoke方法就是代理类调用目标类方法的入口，通过该方法就能实现代理类完成目标类的代理的作用。</p>
-<p>代码演示：</p>
-<p>Subject接口</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Subject</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rent</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">hello</span><span class="params">(String str)</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>从仓库获取镜像文件</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker pull 镜像名:tag</span><br><span class="line"></span><br><span class="line">如果省略后面的tag,如docker pull 镜像名 则会从仓库拉取latest的镜像文件</span><br></pre></td></tr></table></figure>
 
-<p>目标类RealSubject</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RealSubject</span> <span class="keyword">implements</span> <span class="title">Subject</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rent</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"I want to rent my house."</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">hello</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"hello:"</span> + str);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>运行镜像文件</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">docker run -i -t 镜像名：tag  /bin/bash</span><br><span class="line">-i: 启动交互式</span><br><span class="line">-t: 启动终端</span><br><span class="line">/bin/bash: 启动交互式的bash shel</span><br><span class="line"></span><br><span class="line">docker run -it -d -p 8080:8080 tomcat</span><br><span class="line">-d:后台运行</span><br><span class="line">-p:主机端口：docker容器端口</span><br><span class="line">-P:随机分配端口</span><br></pre></td></tr></table></figure>
 
-<p>代理类</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyInvocationHandler</span>  <span class="keyword">implements</span> <span class="title">InvocationHandler</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//目标对象</span></span><br><span class="line">    Object target;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    MyInvocationHandler()&#123;</span><br><span class="line">        <span class="keyword">super</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    MyInvocationHandler(Object target)&#123;</span><br><span class="line">        <span class="keyword">this</span>.target=target;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object proxy, Method method, Object[] args)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"调用target之前"</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        Object invoke = method.invoke(target, args);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"调用target之后"</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> invoke;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>删除镜像文件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi 镜像名:tag</span><br></pre></td></tr></table></figure>
 
-<p>测试运行</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        Subject subject=<span class="keyword">new</span> RealSubject();</span><br><span class="line"></span><br><span class="line">        InvocationHandler invocationHandler=<span class="keyword">new</span> MyInvocationHandler(subject);</span><br><span class="line"><span class="comment">//创建代理类对象的时候,提供了目标对象类加载器以及目标对象实现的接口与invocationHandler进行绑定</span></span><br><span class="line">        Subject proxyObject = (Subject) Proxy.newProxyInstance(subject.getClass().getClassLoader(), subject.getClass().getInterfaces(), invocationHandler);</span><br><span class="line"></span><br><span class="line">        proxyObject.hello(<span class="string">"你好呀"</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h3><p>前面讲到了镜像，那么镜像如何产生的，肯定不能凭空产生，它是怎么产生的呢？我们就要讲到Dockerfile了。Dockerfile使用来构建镜像的，通过在Dockerfile文件中，我们加入对构建镜像的过程基本操作，在构建镜像时，docker就会根据Dockerfile中的定义来构建镜像。下面来聊聊Dockerfile文件</p>
+<p>Dockerfile文件的基本结构一本分为四部分：基础镜像信息、维护者信息、镜像操作指令、容器操作指令。</p>
+<p><code>FROM</code> : 指定基础镜像，必须为第一个指令，就是在基础镜像上做一系列操作，记得上面讲的镜像文件都是分层的文件系统了吗?在基础镜像上每做一次操作，就会再基础镜像上包了一层。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">格式：</span><br><span class="line">FROM &lt;image&gt;:&lt;tag&gt;</span><br><span class="line">eg:</span><br><span class="line">FROM tomcat</span><br><span class="line">注意如果没有指定tag，则默认为latest版本的镜像</span><br></pre></td></tr></table></figure>
 
-<p>运行结果</p>
-<p>调用target之前<br>hello:你好呀<br>调用target之后</p>
-<h1 id="CGLIB动态代理"><a href="#CGLIB动态代理" class="headerlink" title="CGLIB动态代理"></a>CGLIB动态代理</h1><p>​    CGLIB是一个优秀的动态代理框架，它的底层使用ASM在内存中动态生成目标类的子类，因此不能用final修饰目标类，它的使用不需要实现任何接口，简单易用，并且运行速度要高于JDK的动态代理。</p>
-<p>目标对象</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CglibTargetObject</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span>  <span class="title">doing</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"I want to maney"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>MAINTAINER</code> 维护者信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">格式：</span><br><span class="line">MAINTAINER &lt;name&gt;</span><br><span class="line">MAINTAINER ZMH</span><br></pre></td></tr></table></figure>
 
-<p>代理类</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CglibProxy</span> <span class="keyword">implements</span> <span class="title">MethodInterceptor</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    Object target;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 创建代理对象</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> target</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">getInstance</span><span class="params">(Object target)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">this</span>.target=target;</span><br><span class="line">        Enhancer enhancer=<span class="keyword">new</span> Enhancer();</span><br><span class="line">        <span class="comment">//设置父类</span></span><br><span class="line">        enhancer.setSuperclass(<span class="keyword">this</span>.target.getClass());</span><br><span class="line">        <span class="comment">//设置回调</span></span><br><span class="line">        enhancer.setCallback(<span class="keyword">this</span>);</span><br><span class="line">        <span class="comment">//创建代理对象</span></span><br><span class="line">        <span class="keyword">return</span> enhancer.create();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 回调方法</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> o</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> method</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> args</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> methodProxy</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> Throwable</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">intercept</span><span class="params">(Object o, Method method, Object[] args, MethodProxy methodProxy)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"开始"</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(method.getName());</span><br><span class="line"></span><br><span class="line">        Object objectResult = methodProxy.invokeSuper(o, args);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"结束"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> objectResult;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>RUN</code>  用于构建镜像时执行的命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">RUN 有两种语法格式：</span><br><span class="line">shell格式：</span><br><span class="line">	RUN &lt;command&gt;  此处的command为你要执行的shell命令</span><br><span class="line">exec执行：</span><br><span class="line">	RUN [&quot;executable&quot;,&quot;param1&quot;,&quot;param2&quot;]</span><br><span class="line">注意：RUN指令创建的中间镜像会被缓存，并会在下次构建中使用，如果不想使用这些镜像，可以在构建镜像时指定--no-cache参数，</span><br><span class="line">如docker build --no-cache</span><br></pre></td></tr></table></figure>
 
-<p>测试</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CglibProxy cglibProxy=<span class="keyword">new</span> CglibProxy();</span><br><span class="line"></span><br><span class="line">       CglibTargetObject cglibProxyInstance=(CglibTargetObject) cglibProxy.getInstance(<span class="keyword">new</span> CglibTargetObject());</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">       cglibProxyInstance.doing();</span><br></pre></td></tr></table></figure>
+<p><code>ADD</code> 将本地文件 添加到容器中，tar类型的文件会自动解压(网络压缩资源不会被解压)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">格式：</span><br><span class="line">ADD &lt;src&gt;...&lt;dest&gt;</span><br><span class="line">ADD [&quot;&lt;src&gt;&quot;,...&lt;dest&gt;&quot;]支持包含空格的路径</span><br><span class="line">eg</span><br><span class="line">ADD hom*.gz /mydir #将当前目录得出hom开头的gz文件添加到mydir，并解压缩</span><br></pre></td></tr></table></figure>
 
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>1、如果目标对象实现了接口，就可以采用JDK动态代理的形式来为目标类实现代理。</p>
-<p>2、如果目标对象没有实现接口，采用CGLIB的方式，生成目标对象的子类，实现动态代理类。</p>
+<p><code>COPY</code>    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式： </span><br><span class="line">COPY &lt;src&gt;(本地)  &lt;dest&gt;(容器)</span><br></pre></td></tr></table></figure>
+
+<p><em>注意ADD和COPY都可以将本地文件复制到容器中，但是ADD可以将类似的压缩文件自动解压缩，而COPY不行，ADD功能更强大</em></p>
+<p><code>CMD</code> 用于镜像运行容器时调用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">格式：</span><br><span class="line">CMD [&quot;executable&quot;,&quot;param1&quot;,&quot;param2&quot;] (执行可执行文件优先)</span><br><span class="line">CMD command param1 (执行shell)</span><br><span class="line">eg</span><br><span class="line">CMD echo &quot;hello,I&apos;m in containering&quot;</span><br><span class="line">CMD [&quot;/usr/bin/wc&quot;,&quot;--help&quot;]</span><br></pre></td></tr></table></figure>
+
+<p><em>和RUN不同，CMD命令在运行镜像生成容器时运行命令，RUN在构建镜像的过程中运行</em></p>
+<p><code>ENTERPOINT</code> 配置容器，使其可执行化，只能有一个ENTERPOINT命令。配合CMD可省去”executable”,只使用参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">格式：</span><br><span class="line">ENTERPOINT [&quot;executable&quot;,&quot;param1&quot;](可执行文件优先)</span><br><span class="line">ENTERPOINT command param1</span><br><span class="line">eg</span><br><span class="line">ENTERPOINT [&quot;top&quot;,&quot;-b&quot;]</span><br><span class="line">CMD [&quot;-c&quot;]</span><br></pre></td></tr></table></figure>
+
+<p><em>注意ENTERPOINT和CMD非常类似，但是对于CMD来说，如果通过docker run 执行命令启动容器时指定命令，会将dockerfile中CMD命令覆盖。对于ENTERPOINT来说，不会覆盖，只是追加。</em></p>
+<p><code>ENV</code> 设置环境变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式：</span><br><span class="line">ENV &lt;key&gt; &lt;value&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>EXPOSE</code> 指定外界交互端口</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">EXPOSE &lt;port&gt;</span><br><span class="line">注意：EXPOSE并不会让容器的端口访问到主机，要使其可访问，需要在docker run 运行容器时通过-p 指定固定端口，或者通过-P参数发布EXPOSE 导出的所有端口</span><br></pre></td></tr></table></figure>
+
+<p><code>VOLUME</code> 容器数据持久化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">格式：</span><br><span class="line">VOLUME [path]</span><br><span class="line">eg</span><br><span class="line">VOLUME /foo</span><br><span class="line">这表示，在docker运行时，docker会创建一个匿名的volume，并将此volume绑定到container的/foo目录中，如果container的/foo目录下已经有内容，则会将内容拷贝的volume中。也即，Dockerfile中的VOLUME /foo与docker run -v /foo alpine的效果一样.</span><br></pre></td></tr></table></figure>
+
+<p><code>WORKDIR</code> 工作目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">格式：</span><br><span class="line">WORKDIR: 工作目录</span><br><span class="line">通过WORKDIR设置工作目录后，Dockerfile中其后的命令RUN、CMD、ENTRYPOINT、ADD、COPY等命令都会在该目录下执行。在使用docker run运行容器时，可以通过-w参数覆盖构建时所设置的工作目录</span><br></pre></td></tr></table></figure>
+
+<p>通过以上命令讲解，可以touch Dockerfile文件，根据需要填写配置信息，Dockerfile文件构建完成后，通过</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker build -f path/to/Dcokerfile -t 库名/镜像名:tag</span><br><span class="line">-f dockerfile 文件路径</span><br><span class="line">-t 镜像的名字及标签，通常 name:tag 或者 name 格式</span><br></pre></td></tr></table></figure>
+
+<p>这样你就可以对基础镜像进行改造，通过Dockerfile文件对基础镜像进行操作，使他一层包一层，就可得到自己想要的镜像。</p>
+<h2 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h2><h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><ul>
+<li>启动一个容器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run -d 镜像名 </span><br><span class="line">-d 后台运行</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>查询所有容器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps -a</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>开启容器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker start 容器id</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>停止容器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop 容器id</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>重启容器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker restart 容器id</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>退出容器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果要退出容器，并关闭容器的做法是 exit</span><br><span class="line">如果要退出容器不关闭容器：Ctrl+P+Q</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>进入容器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在使用-d 或者Ctrl+P+Q让容器在后台运行时，想进入容器时，</span><br><span class="line">通过执行docker attach 容器id</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>exec命令</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it 容器id /bin/bash 执行交互式的shell</span><br><span class="line">exec 其实就是进入容器后执行，命令，并返回结果</span><br><span class="line">如果从这个容器退出，不会导致容器的停止，这就是为什么推荐大家使用 docker exec 的原因</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>查看容器详细信息</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker inspect 容器id</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>将容器内文件拷贝到宿主机</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker cp 容器id:容器内路径 目的主机路径</span><br></pre></td></tr></table></figure>
+
+<h3 id="持久化"><a href="#持久化" class="headerlink" title="持久化"></a>持久化</h3><p>docker 的数据持久化不随着container的结束而结束，数据存于host主机指定目录（bind mount）要么使用docker自己管理的volume（/var/lib/docker/volumes下）。</p>
+<p><em>使用volume</em></p>
+<p>volume也是绕过container的文件系统，直接将数据写到host机器上，只是volume是被docker管理的，docker下所有的volume都在host机器上的指定目录下/var/lib/docker/volumes。</p>
+<p>将my-volume挂载到container中的/mydata目录：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -v my-volume:/mydata alpine sh</span><br></pre></td></tr></table></figure>
+
+<p>然后可以查看到给my-volume的volume：</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">docker volume inspect my-volume</span><br><span class="line">[<span class="meta"></span></span><br><span class="line"><span class="meta">    &#123;</span></span><br><span class="line"><span class="meta">        <span class="meta-string">"CreatedAt"</span>: <span class="meta-string">"2018-03-28T14:52:49Z"</span>,</span></span><br><span class="line"><span class="meta">        <span class="meta-string">"Driver"</span>: <span class="meta-string">"local"</span>,</span></span><br><span class="line"><span class="meta">        <span class="meta-string">"Labels"</span>: null,</span></span><br><span class="line"><span class="meta">        <span class="meta-string">"Mountpoint"</span>: <span class="meta-string">"/var/lib/docker/volumes/my-volume/_data"</span>,</span></span><br><span class="line"><span class="meta">        <span class="meta-string">"Name"</span>: <span class="meta-string">"my-volume"</span>,</span></span><br><span class="line"><span class="meta">        <span class="meta-string">"Options"</span>: &#123;&#125;,</span></span><br><span class="line"><span class="meta">        <span class="meta-string">"Scope"</span>: <span class="meta-string">"local"</span></span></span><br><span class="line"><span class="meta">    &#125;</span></span><br><span class="line"><span class="meta"></span>]</span><br></pre></td></tr></table></figure>
+
+<p>可以看到，volume在host机器的目录为<code>/var/lib/docker/volumes/my-volume/_data</code>。此时，如果my-volume不存在，那么docker会自动创建my-volume，然后再挂载。</p>
+<p>也可以不指定host上的volume：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -v /mydata alpine sh</span><br></pre></td></tr></table></figure>
+
+<p>此时docker将自动创建一个匿名的volume，并将其挂载到container中的/mydata目录。匿名volume在host机器上的目录路径类似于：<code>/var/lib/docker/volumes/300c2264cd0acfe862507eedf156eb61c197720f69e7e9a053c87c2182b2e7d8/_data</code>。</p>
+<p>除了让docker帮我们自动创建volume，我们也可以自行创建：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker volume create my-volume-2</span><br></pre></td></tr></table></figure>
+
+<p>然后将这个已有的my-volume-2挂载到container中:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -v my-volume-<span class="number">2</span><span class="symbol">:/mydata</span> alpine sh</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，与bind mount不同的是，如果volume是空的而container中的目录有内容，那么docker会将container目录中的内容拷贝到volume中，但是如果volume中已经有内容，则会将container中的目录覆盖。请参考<a href="https://medium.com/@yaofei/docker-volume-what-i-learned-27134081d6d9" target="_blank" rel="noopener">这里</a>。</p>
+<h2 id="常用命令图"><a href="#常用命令图" class="headerlink" title="常用命令图"></a>常用命令图</h2><p><img src="/2019/11/09/docker技术详解/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191110144218.png" alt></p>
+<p>命令有很多，日常还是多多积累，我相信通过这个图，很清晰的看到命令执行情况。</p>
 
       
     </div>
@@ -533,35 +674,6 @@
 	<div>
       
         ﻿
-<div class="my_post_copyright">
-  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-  
-  <!-- JS库 sweetalert 可修改路径 -->
-  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/08/17/动态代理之JDK与CGLIB/">动态代理之JDK与CGLIB</a></p>
-  <p><span>文章作者:</span><a href="/" title="访问 Mr.Zhu 的个人博客">Mr.Zhu</a></p>
-  <p><span>发布时间:</span>2019年08月17日 - 11:42</p>
-  <p><span>最后更新:</span>2019年08月17日 - 13:34</p>
-  <p><span>原始链接:</span><a href="/2019/08/17/动态代理之JDK与CGLIB/" title="动态代理之JDK与CGLIB">https://zzu-zmh.github.io/2019/08/17/动态代理之JDK与CGLIB/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://zzu-zmh.github.io/2019/08/17/动态代理之JDK与CGLIB/" aria-label="复制成功！"></i></span>
-  </p>
-  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
-</div>
-<script> 
-    var clipboard = new Clipboard('.fa-clipboard');
-      $(".fa-clipboard").click(function(){
-      clipboard.on('success', function(){
-        swal({   
-          title: "",   
-          text: '复制成功',
-          icon: "success", 
-          showConfirmButton: true
-          });
-        });
-    });  
-</script>
-
 
       
     </div>
@@ -619,15 +731,6 @@
 
     <footer class="post-footer">
       
-        
-          
-        
-        <div class="post-tags">
-          
-            <a href="/tags/动态代理/" rel="tag"># 动态代理</a>
-          
-        </div>
-      
 
       
       
@@ -637,8 +740,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/11/SpringCloud重要知识点学习/" rel="next" title="SpringCloud重要知识点学习">
-                <i class="fa fa-chevron-left"></i> SpringCloud重要知识点学习
+              <a href="/2019/08/31/Springcloud熔断器Hystix/" rel="next" title="Springcloud熔断器Hystix">
+                <i class="fa fa-chevron-left"></i> Springcloud熔断器Hystix
               </a>
             
           </div>
@@ -646,10 +749,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/18/正向代理与反向代理的区别/" rel="prev" title="正向代理与反向代理的区别">
-                正向代理与反向代理的区别 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -858,7 +957,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JDK-动态代理与CGLIB动态代理"><span class="nav-number">1.</span> <span class="nav-text">JDK 动态代理与CGLIB动态代理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JDK-动态代理"><span class="nav-number">2.</span> <span class="nav-text">JDK 动态代理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CGLIB动态代理"><span class="nav-number">3.</span> <span class="nav-text">CGLIB动态代理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-和-VM的区别"><span class="nav-number">1.</span> <span class="nav-text">Docker 和 VM的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-三个重要概念"><span class="nav-number">2.</span> <span class="nav-text">Docker 三个重要概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#镜像"><span class="nav-number">2.1.</span> <span class="nav-text">镜像</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#镜像基本命令"><span class="nav-number">2.1.1.</span> <span class="nav-text">镜像基本命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dockerfile"><span class="nav-number">2.1.2.</span> <span class="nav-text">Dockerfile</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#容器"><span class="nav-number">2.2.</span> <span class="nav-text">容器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本命令"><span class="nav-number">2.2.1.</span> <span class="nav-text">基本命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#持久化"><span class="nav-number">2.2.2.</span> <span class="nav-text">持久化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令图"><span class="nav-number">2.3.</span> <span class="nav-text">常用命令图</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1077,7 +1176,7 @@
 
 <script>
   window.livereOptions = {
-    refer: '2019/08/17/动态代理之JDK与CGLIB/'
+    refer: '2019/11/09/docker技术详解/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
